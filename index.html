@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Vahid, Amiri, Motlagh, vsg24, software developer, iranaian, mobile, web, وحید امیری مطلق, وحید امیری" />
+    <meta name="description" content="Vahid Amiri Motlagh - Software developer" />
+    <meta name="author" content="Vahid Amiri Motlagh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>Vahid Amiri Motlagh - Software Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    {{/*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">*/}}
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="/static/assets/css/custom.css" />
+
+    {{block "header" .}}{{end}}
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+    <div class="row" style="height: 10vh;     display: flex;
+    align-items: center;">
+        <div class="col-lg-6 offset-lg-6 col-12 top-links">
+            <a href="/">About</a>
+            <a href="/resume">Resume</a>
+            <a href="/contact">Contact</a>
+            <!--<a href="http://atvsg.vahidamiri.com">Blog (in Persian)</a>-->
+        </div>
+    </div>
+
+    <div class="row" style="height: 80vh">
+        {{.content}}
+    </div>
+</div>
+
+{{block "scripts" .}}{{end}}
+<script type="text/javascript" src="/static/assets/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="/static/assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom -->
+<script type="text/javascript" src="/static/assets/js/custom.js"></script>
+
+</body>
+
 </html>
