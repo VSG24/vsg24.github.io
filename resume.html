@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Vahid, Amiri, Motlagh, vsg24, software developer, iranaian, mobile, web, وحید امیری مطلق, وحید امیری" />
+    <meta name="description" content="Vahid Amiri Motlagh - Software developer" />
+    <meta name="author" content="Vahid Amiri Motlagh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Vahid Amiri Motlagh - Resume</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row d-flex align-items-center" style="height: 10vh;">
+        <div class="col-lg-6 offset-lg-6 col-12 top-links">
+            <a href="/">About</a>
+            <a href="/resume">Resume</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="row" style="height: 80vh">
+        <div class="col-lg-12">
+			<div class="row" style="height: 10%">
+				<div class="col-12">
+					<h1>/resume</h1>
+					<div id="wait" class="text-monospace"></div>
+				</div>
+			</div>
+			<div class="row scrolling-resumes-container" id="vue-app" v-cloak>
+				<div v-for="item in resumeEntries" class="resume-entry col-xl-3 col-lg-5 col-sm-6 col-11 hidden">
+					<div class="row">
+						<div class="col-12">
+							<small>{{ item.start }}</small>
+						</div>
+						<div class="col-12 big-divider"></div>
+						<div class="col-7 col-md-7">
+							<small>{{ item.type }}</small>
+						</div>
+						<div class="col-5 col-md-5 text-right">
+							<small v-if="item.finish">{{ item.finish }}</small>
+							<small v-else>...</small>
+						</div>
+					</div>
+					<a v-if="item.link" :href="item.link"><h6 style="margin-top: .5rem">{{ item.title }}</h6></a>
+					<h6 v-else style="margin-top: .5rem">{{ item.title }}</h6>
+					<p class="font-weight-light" style="margin-top: 1rem">{{ item.description }}</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/vue.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.bundle.min.js"></script>
+<script>
+	new Vue({
+		el: '#vue-app',
+		data() {
+			return {
+				resumeEntries: [
+				  {
+					"title": "IT Engineering undergraduate program",
+					"description": "Karaj Azad University (KIAU) - Iran",
+					"type": "Formal education",
+					"start": "September 2014",
+					"finish": "December 2018"
+				  },
+				  {
+					"title": "C programming language",
+					"type": "Formal education",
+					"start": "September 2014",
+					"finish": "March 2015"
+				  },
+				  {
+					"title": "HTML, CSS, JavaScript",
+					"type": "Formal education",
+					"start": "January 2015"
+				  },
+				  {
+					"title": "Java programming language",
+					"type": "Formal education",
+					"start": "January 2015"
+				  },
+				  {
+					"title": "PHP programming language",
+					"type": "Online courses",
+					"start": "August 2015"
+				  },
+				  {
+					"title": "ccms - PHP web app",
+					"description": "A simple PHP based CMS inspired by WordPress",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/VSG24/ccms",
+					"start": "September 2015",
+					"finish": "October 2015"
+				  },
+				  {
+					"title": "C# programming language",
+					"type": "Online courses",
+					"start": "October 2015"
+				  },
+				  {
+					"title": "ClearBlog - ASP.NET MVC 5 web app",
+					"description": "A simple ASP.NET MVC 5 based blogging CMS",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/VSG24/clearblog",
+					"start": "November 2015",
+					"finish": "February 2016"
+				  },
+				  {
+					"title": "NewsGet - Android app",
+					"description": "A tech/entertainment news aggregator made with Xamarin.Android (Native) using a PHP 7 server - Also has a web version made using Vue.js",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/VSG24/NewsGet_Android",
+					"start": "February 2016",
+					"finish": "July 2016"
+				  },
+				  {
+					"title": "DigitalShop - ASP.NET Core web app",
+					"description": "A fully featured ASP.NET Core/SQL Server based shopping platform that can be used to create a marketplace for digital content",
+					"type": "University project",
+					"start": "April 2016",
+					"finish": "August 2016"
+				  },
+				  {
+					"title": "UNIVER30t - PHP web app",
+					"description": "A platform for students to share educational material with each other - Made with PHP 7",
+					"type": "Startup",
+					"link": "https://univer30t.com",
+					"start": "August 2016",
+					"finish": "March 2019"
+				  },
+				  {
+					"title": "UNIVER30t - Android app",
+					"description": "Android version of UNIVER30t made with Java",
+					"type": "Startup",
+					"link": "https://cafebazaar.ir/app/com.univer30t.android/",
+					"start": "December 2016",
+					"finish": "March 2019"
+				  },
+				  {
+					"title": "Soda - PHP MVC framework",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/VSG24/Soda",
+					"start": "May 2017"
+				  },
+				  {
+					"title": "Swift programming language",
+					"type": "Online courses",
+					"start": "October 2017"
+				  },
+				  {
+					"title": "UNIVER30t - iOS app",
+					"description": "iOS version of UNIVER30t made with Vue.js/Framework7",
+					"type": "Startup",
+					"link": "https://new.sibapp.com/applications/univer30t",
+					"start": "December 2017",
+					"finish": "February 2018"
+				  },
+				  {
+					"title": "veezee - Web app",
+					"description": "A music streamer for iOS/Android/Web with a backend made with PHP/MongoDB",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/veezee-music",
+					"start": "February 2018"
+				  },
+				  {
+					"title": "veezee - iOS app",
+					"description": "veezee - A music streamer",
+					"type": "Personal project - Open source",
+					"link": "https://github.com/veezee-music/veezee-ios",
+					"start": "February 2018"
+				  },
+				  {
+					"title": "veezee - Android app",
+					"description": "veezee - A music streamer",
+					"type": "Team project - Open source",
+					"link": "https://github.com/veezee-music/veezee-android",
+					"start": "February 2018"
+				  },
+				  {
+					"title": "Go programming language",
+					"type": "Online courses",
+					"start": "October 2018"
+				  },
+				  {
+					"title": "Cap - Financial Assistant",
+					"description": "An Android app that helps users stay on top of their assets value while keeping them updated on the most important financial markets especially Foreign Exchange Market (Forex) and the cryptocurrency market.",
+					"type": "Team project - Open source",
+					"link": "https://capapp.ir",
+					"start": "September 2018"
+				  }
+				]
+			};
+		},
+		mounted() {
+			let wait = document.getElementById("wait");
+			let dots = setInterval(() => {
+				if (wait.childElementCount > 2) {
+					wait.innerText = '';
+					wait.innerHTML += "<br>loading sequence started...";
+
+					setTimeout(() => {
+						wait.innerHTML += "<br>printing results vector<div id='current-loading-entry'></div>";
+						let delay = 300;
+						let currentLoadingEntry = document.getElementById('current-loading-entry');
+						let resumeEntries = $('.resume-entry');
+
+						resumeEntries.each(function(index) {
+							$(this).delay(delay * index).queue(function() {
+								$(this).removeClass('hidden').dequeue();
+								currentLoadingEntry.innerHTML = '';
+								currentLoadingEntry.innerHTML += (`loadingIndex: [${index}]`);
+
+								if(index + 1 === resumeEntries.length) {
+									currentLoadingEntry.innerHTML += "<br>loading sequence finished.";
+								}
+							});
+						});
+					}, 1000);
+
+					clearInterval(dots);
+				} else {
+					wait.innerHTML += "<div style='font-size: 2rem; display: inline;'>.</div>";
+				}
+			}, 500);
+		}
+	});
+</script>
+</body>
+</html>
