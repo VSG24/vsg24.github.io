@@ -72,7 +72,7 @@
 @media (max-width: 844px) {
     .main-image-container {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
