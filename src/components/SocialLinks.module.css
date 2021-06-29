@@ -1,0 +1,18 @@
+.socialIcons:not(:first-child) {
+	margin-left: 1rem;
+}
+
+.socialIcons img:hover {
+	transform: scale(1.5);
+}
+
+.socialIcons img {
+	transition: all .2s ease-in-out;
+	margin-top: 1.5rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+span {
+	display: block;
+}

@@ -1,0 +1,28 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+}
+
+.cardContent {
+	padding: 0 5rem !important;
+	margin: 1rem 0;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.image {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+.description {
+	margin-top: 1rem !important;
+}

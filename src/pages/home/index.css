@@ -1,0 +1,11 @@
+h1 {
+	display: inline;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+.title {
+	font-weight: 300;
+}
