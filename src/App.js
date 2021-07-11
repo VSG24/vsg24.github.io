@@ -33,32 +33,37 @@ const education = [
 
 const work = [
 	{
-		date: 'Jan 2017 - Jan 2018',
-		title: 'Full Stack Developer',
-		subtitle: 'Armandar Sina Engineering Co'
+		date: 'July 2021 - Current',
+		title: 'Full Stack Developer (Full-Time)',
+		subtitle: 'Avid Arvand'
+	},
+	{
+		date: 'Feb 2021 - July 2021',
+		title: 'Front-end Developer (Part-Time)',
+		subtitle: 'Sarvehana Psychological Research Co'
 	},
 	{
 		date: 'Aug 2018 - Jan 2020',
-		title: 'Full Stack Developer',
+		title: 'Full Stack Developer (Full-Time)',
 		subtitle: 'Badian Andishe'
 	},
 	{
-		date: 'Feb 2021 - Current',
-		title: 'Front-end Developer',
-		subtitle: 'Sarvehana Psychological Research Co'
+		date: 'Jan 2017 - Jan 2018',
+		title: 'Full Stack Developer (Full-Time)',
+		subtitle: 'Armandar Sina Engineering Co'
 	}
 ];
 
 const volunteer = [
 	{
-		date: 'Oct 2016 - Feb 2018',
-		title: 'Full Stack Developer',
-		subtitle: 'UNIVER30t - Educational content sharing startup'
-	},
-	{
 		date: 'Dec 2017 - Jul 2018',
 		title: 'Full Stack / Mobile Developer',
 		subtitle: 'veezee music - Open source cross-platform music streamer'
+	},
+	{
+		date: 'Oct 2016 - Feb 2018',
+		title: 'Full Stack Developer',
+		subtitle: 'UNIVER30t - Educational content sharing startup'
 	}
 ];
 
@@ -102,7 +107,7 @@ export default function App() {
 					</Switch>
 
 					<Route exact path="/(|resume)" render={() => (
-						<Grid className="MuiPaper-rounded" component="footer"><div>Last update: 2021/06/22</div></Grid>
+						<Grid className="MuiPaper-rounded" component="footer"><div>Last update: 2021/07/12</div></Grid>
 					)} />
 				</Container>
 			</HashRouter>
